@@ -45,6 +45,24 @@
 
 ## Solution 1
 loop do
+  puts ">> How many output lines do you want? Enter a number >= 3 (Q to quit):"
+  answer = gets.chomp.downcase
+
+  break if answer == "q"
+
+  if answer.to_i < 3
+    puts "That's not enough lines."
+    next
+  else
+    answer.to_i.times do 
+      puts "Launch School is the best!"
+    end
+    break
+  end        
+end
+
+## Solution 2
+loop do
   number_of_lines = nil
   input_str = nil
 
@@ -69,20 +87,3 @@ loop do
   end
 end
 
-## Solution 2
-loop do
-  puts ">> How many output lines do you want? Enter a number >= 3 (Q to quit):"
-  answer = gets.chomp.downcase
-
-  break if answer == "q"
-
-  if answer.to_i < 3
-    puts "That's not enough lines."
-    next
-  else
-    answer.to_i.times do 
-      puts "Launch School is the best!"
-    end
-    break
-  end        
-end
