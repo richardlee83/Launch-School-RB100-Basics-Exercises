@@ -31,7 +31,7 @@ find_first_nonzero_among(1)
 # - The error raised is an ArgumentError and occurs when we first call 
 #   the method find_first_nonzero_among
 # - We provide this method with 6 arguments, each being an integer, when the
-#   the method is defined as accepting 1 parameter
+#   the method only accepts 1 argument to be passed in as the parameter numbers
 # - This mismatch between the number of arguments expected and the number given is
 #   what causes the error to be raised 
 # - If we pass in the argument as an array containing the set of values then we won't
